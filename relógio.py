@@ -32,11 +32,11 @@ def atualizar_hora():
     hora.config(text=hora_atual)
     root.after(1000, atualizar_hora)
 
-saudacao = Label(root, font=("ds-digital", 18), bg="black", fg="cyan")
+saudacao = Label(root, font=("ds-digital", 20), bg="black", fg="cyan",padx=10, pady=10)
 saudacao.pack()
-data = Label(root, font=("ds-digital", 13), bg="black", fg="cyan")
+data = Label(root, font=("ds-digital", 18), bg="black", fg="cyan",padx=10, pady=10)
 data.pack()
-hora = tk.Label(root, font=("ds-digital", 40), bg="black", fg="cyan")
+hora = tk.Label(root, font=("ds-digital", 40), bg="black", fg="cyan",padx=10, pady=10)
 hora.pack()
 
 pegar_saudacao()
